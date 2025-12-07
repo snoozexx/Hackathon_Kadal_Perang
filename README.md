@@ -32,6 +32,7 @@ pip install -r requirements.txt
   - `KOLOSAL_API_KEY=<isi-dari-provider>`
   - `KOLOSAL_BASE_URL=https://api.kolosal.ai/v1`
   - `AI_MODEL=Claude Sonnet 4.5`
+  - `PORT = 8000`
 - Jalankan server:
   - `uvicorn main:app --reload --host 0.0.0.0 --port 8000`
 - Uji cepat:
