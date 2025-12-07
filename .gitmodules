@@ -1,3 +1,6 @@
 [submodule "be-damage-detection-kadal-perang"]
 	path = be-damage-detection-kadal-perang
 	url = https://github.com/snoozexx/be-damage-detection-kadal-perang.git
+[submodule "fe-damage-detection-kadal-perang"]
+	path = fe-damage-detection-kadal-perang
+	url = https://github.com/snoozexx/fe-damage-detection-kadal-perang.git
