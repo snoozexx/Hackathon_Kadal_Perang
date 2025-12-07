@@ -1,7 +1,7 @@
 # Hackathon_Kadal_Perang
 imphen hackathon team kadal perang, pak edy army
 
-# RodhiGengFirmansyah — Backend IoT + AI Diagnosa Kerusakan dan memberikan rekomendasi perbaikan pada kendaraan
+# OtoSense — Backend IoT + AI Diagnosa Kerusakan dan memberikan rekomendasi perbaikan pada kendaraan
 
 # Clone Repo
 git clone --recurse-submodules <repository-url>
