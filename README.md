@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 # Install Dependencies
 cd Hackathon_Kadal_Perang\fe-damage-detection-kadal-perang
-npm install
+- npm install
 
 # Jalankan Project
 npm run build
