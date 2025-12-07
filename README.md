@@ -64,3 +64,5 @@ npm run dev
 - Selain itu juga ada view detail atau summary kerusakan semua nya dan akan di berikan rekomendasi perbaikan nya,
 - Di tampilkan juga potensi kerusakan komponen untuk kedepan nya juga, kemudian di tampilkan juga estimasi biaya perbaikan nya
 - Terdapat fitur untuk melihat history riwayat kendaraan nya
+
+Link video demo : https://youtu.be/BY4b3cyu0Fs?si=ad-ZbX3AAvR4MIC6
