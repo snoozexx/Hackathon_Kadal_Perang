@@ -1,7 +1,7 @@
 # Hackathon_Kadal_Perang
 imphen hackathon team kadal perang, pak edy army
 
-# RodhiJelek — Backend IoT + AI Pemeliharaan Armada
+# RodhiJelekFIrmansyah — Backend IoT + AI Pemeliharaan Armada
 
 ## Elevator Pitch
 - UMKM dengan armada kendaraan sering kehilangan waktu dan biaya karena kerusakan tak terdeteksi.
