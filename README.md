@@ -3,40 +3,11 @@ imphen hackathon team kadal perang, pak edy army
 
 # RodhiGengFirmansyah — Backend IoT + AI Diagnosa Kerusakan dan memberikan rekomendasi perbaikan pada kendaraan
 
-## Elevator Pitch
-- UMKM dengan armada kendaraan sering kehilangan waktu dan biaya karena kerusakan tak terdeteksi.
-- OtoSense menggabungkan telemetry kendaraan real-time dengan AI untuk: mendeteksi anomali, memberi diagnosa cepat, dan estimasi biaya perbaikan.
-- Hasilnya: downtime turun, biaya perawatan terkontrol, dan operasional lebih aman.
+# Clone Repo
+git clone --recurse-submodules <repository-url>
 
-## Problem & Insight
-- Masalah: Diagnosa lambat, tidak adanya peringatan dini, dan sulitnya estimasi biaya.
-- Insight: Data OBD/telemetry + pengetahuan mekanik bisa dipakai untuk rekomendasi yang actionable.
-- Solusi kami: Aturan sederhana untuk status cepat, lalu AI menganalisis DTC + sensor guna memberi ringkasan, urgensi, dan estimasi biaya.
-
-## Value Proposition
-- Peringatan real-time untuk kondisi kritikal (overheat, overspeed, low battery, AFR issue).
-- Diagnosa AI berbahasa Indonesia yang mudah dipahami driver/owner.
-- Knowledge Base lokal untuk caching hasil (hemat panggilan AI, konsisten, cepat).
-
-## Fitur Utama
-- HTTP API untuk ingest telemetry dan ambil status terakhir.
-- WebSocket broadcast untuk live monitoring per kendaraan atau global.
-- Integrasi AI (Kolosal/OpenAI client) dengan output JSON terstruktur.
-- Penyimpanan pengetahuan lokal `knowledge_base.json` dengan TTL 20 menit.
-
-## Arsitektur Singkat
-- `main.py`: HTTP + WebSocket server, orkestrasi status dan AI.
-- `models.py`: Skema data Pydantic (`TelemetryIn`, `TelemetryOut`, `AIAdvice`).
-- `services/api_client.py`: Pemanggilan AI + normalisasi hasil.
-- `services/ai_service.py`: Analisis kerusakan, parse biaya, dan cache KB atomik.
-- `knowledge_base.json`: Cache pengetahuan DTC.
-- `simulator.py`: Skenario pengujian cepat.
-- `test.py`: Contoh panggilan langsung ke Kolosal API.
-
-## Tech Stack
-- Python 3.10+, FastAPI, Uvicorn, Pydantic, Requests, dotenv
-- OpenAI SDK (dipakai untuk akses Kolosal AI via `base_url`)
-- Dependensi: lihat `requirements.txt`
+# Install Dependencies
+pip install -r requirements.txt
 
 ## Demo Script (3–5 Menit)
 - Langkah 1: Jalankan server:
@@ -67,3 +38,28 @@ imphen hackathon team kadal perang, pak edy army
   - `python simulator.py --scenario 3`
   - `curl -X GET http://localhost:8000/api/status/TEST-003`
 
+-------------------------------------------------------------------------
+## FE
+
+# Install Dependencies
+cd Hackathon_Kadal_Perang\fe-damage-detection-kadal-perang
+npm install
+
+# Jalankan Project
+npm run build
+npm run dev
+
+-------------------------------------------------------------------------
+
+## Cara Menggunakan Sebagai User yang sudah di deploy
+- Masuk ke link ini 
+  https://fe-damage-detection-kadal-perang.vercel.app/
+  
+- Tancapkan sensor OBD2 pada port untuk mengambil data dari ECU kendaraan
+- Pilih kendaraan yang ingin di diagnosa
+- Klik tombol start atau mulai diagnosa
+- Maka akan otomatis mendiagnosa atau mendeteksi kerusakan pada motor nya
+- Setelah 15 detik, maka akan tampil chart atau grafik berbagai macam sensor secara real yang di ambil dari motor tsb
+- Selain itu juga ada view detail atau summary kerusakan semua nya dan akan di berikan rekomendasi perbaikan nya,
+- Di tampilkan juga potensi kerusakan komponen untuk kedepan nya juga, kemudian di tampilkan juga estimasi biaya perbaikan nya
+- Terdapat fitur untuk melihat history riwayat kendaraan nya
