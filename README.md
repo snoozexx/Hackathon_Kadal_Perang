@@ -4,7 +4,7 @@ imphen hackathon team kadal perang, pak edy army
 # OtoSense — Backend IoT + AI Diagnosa Kerusakan dan memberikan rekomendasi perbaikan pada kendaraan
 
 # Clone Repo
-git clone --recurse-submodules <repository-url>
+git clone --recurse-submodules https://github.com/snoozexx/Hackathon_Kadal_Perang.git
 
 # Install Dependencies
 pip install -r requirements.txt
