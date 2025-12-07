@@ -1,7 +1,7 @@
 # Hackathon_Kadal_Perang
 imphen hackathon team kadal perang, pak edy army
 
-# RodhiJelekFIrmansyah — Backend IoT + AI Diagnosa Kerusakan dan memberikan rekomendasi perbaikan pada kendaraan
+# RodhiGengFirmansyah — Backend IoT + AI Diagnosa Kerusakan dan memberikan rekomendasi perbaikan pada kendaraan
 
 ## Elevator Pitch
 - UMKM dengan armada kendaraan sering kehilangan waktu dan biaya karena kerusakan tak terdeteksi.
